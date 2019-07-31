@@ -38,8 +38,8 @@ def scrape_mars_news():
         par = soup.find('div', class_='article_teaser_body').text
 
         # Dictionary entry from MARS NEWS
-        mars_info['news_title'] = title
-        mars_info['news_paragraph'] = par
+        mars_info['title'] = title
+        mars_info['par'] = par
 
         return mars_info
 
